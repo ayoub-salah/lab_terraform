@@ -32,8 +32,20 @@ Ce référentiel contient des scripts Terraform pour créer et gérer une infras
 Terraform vous demandera une confirmation avant de procéder au déploiement.  
 Attendez que Terraform termine le déploiement. Une fois terminé, il affichera les ressources créées.  
 
+    ##Test de l'ALB
+
+    Une fois que vous avez déployé votre infrastructure AWS à l'aide des scripts Terraform, vous pouvez tester l'ALB en suivant ces étapes :
+
+    1. Une fois le déploiement terminé, Terraform affiche l'output `alb_dns_name` dans le terminal. Copiez le DNS du Load Balancer.
+
+    2. Ouvrez un navigateur web et collez le DNS du Load Balancer dans la barre d'adresse.
+
+    3. Vérifiez si l'application fonctionne correctement et si elle est accessible via l'ALB.
+
+
 -Pour détruire votre infrastructure AWS, exécutez la commande suivante :  
-        $terraform destroy
+            $terraform destroy  
+        
 Terraform vous demandera une confirmation avant de détruire les ressources.
 
 **##Documentation supplémentaire:**  
