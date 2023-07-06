@@ -88,3 +88,7 @@ resource "aws_lb_target_group_attachment" "ayoub_target_group_attachment_2" {
   target_id        = aws_instance.ayoub_server_2.id
   port             = 80
 }
+
+output "alb_dns" {
+  value = aws_lb.ayoub_alb_1.dns_name
+}
